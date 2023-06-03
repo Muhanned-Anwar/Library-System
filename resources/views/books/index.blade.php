@@ -1,6 +1,12 @@
-@extends('layouts.app')
+@extends('panel.index')
 
 @section('content')
+    <div class="row">
+        <a href="{{route('register')}}"> Register </a>
+        <div class="w-16"></div>
+        <a href="{{route('login')}}"> Login </a>
+    </div>
+    <hr/>
     <h1>Books</h1>
     <form action="{{ route('books.index') }}" method="GET">
         <input type="text" name="search" placeholder="Search...">

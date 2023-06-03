@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('panel.index')
 
 @section('content')
     <h1>Book Details</h1>
